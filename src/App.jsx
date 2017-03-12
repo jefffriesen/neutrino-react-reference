@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import DecoratorsExample from './decorator-example';
-import TypecheckExample from './typecheck-example';
+// import DecoratorsExample from './decorator-example';
+// import TypecheckExample from './typecheck-example';
 import TestingInfo from './TestingInfo';
 import { sectionStyle, counterStyle } from './shared/styles';
 
 export default class App extends Component {
-  state = {
-    counter: 0
-  };
+  // state = {
+  //   counter: 0
+  // };
 
   // Example of a ES2016 class properties https://babeljs.io/docs/plugins/transform-class-properties/
-  increaseHandler = e => {
-    this.setState({ counter: this.state.counter + 1 });
-  };
-  decreaseHandler = e => {
-    this.setState({ counter: this.state.counter - 1 });
-  };
+  // increaseHandler = e => {
+  //   this.setState({ counter: this.state.counter + 1 });
+  // };
+  // decreaseHandler = e => {
+  //   this.setState({ counter: this.state.counter - 1 });
+  // };
 
   render() {
     const { counter } = this.state;
@@ -31,9 +31,9 @@ export default class App extends Component {
           <span style={counterStyle}>{counter}</span>
         </div>
 
-        <DecoratorsExample />
+        {/* <DecoratorsExample /> */}
         <TestingInfo />
-        <TypecheckExample />
+        {/* <TypecheckExample /> */}
       </div>
     );
   }
