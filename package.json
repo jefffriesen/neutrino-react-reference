@@ -24,8 +24,13 @@
     "neutrino-preset-decorators": "^0.1.0",
     "neutrino-preset-jest": "^4.3.0",
     "neutrino-preset-lint-prettier": "git+https://github.com/jefffriesen/neutrino-preset-lint-prettier.git",
+    "neutrino-preset-postcss": "^1.0.0",
     "neutrino-preset-react": "^4.2.3",
     "plop": "^1.7.4",
+    "postcss-cssnext": "^2.10.0",
+    "postcss-modules": "^0.6.4",
+    "postcss-reporter": "^3.0.0",
+    "precss": "^1.4.0",
     "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
@@ -44,6 +49,7 @@
     "devtool": "source-map",
     "presets": [
       "neutrino-preset-react",
+      "neutrino-preset-postcss",
       "neutrino-preset-class-properties",
       "neutrino-preset-decorators",
       "neutrino-custom-tcomb.js",
@@ -58,6 +64,14 @@
           "lodash"
         ]
       }
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "precss": {},
+      "postcss-cssnext": {},
+      "postcss-modules": {},
+      "postcss-reporter": {}
     }
   }
 }

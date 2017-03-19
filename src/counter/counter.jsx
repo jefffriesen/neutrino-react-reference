@@ -2,6 +2,7 @@ import React, {Component, PropTypes} from 'react';
 import {observer, inject} from 'mobx-react';
 import {Button, Glyphicon} from 'react-bootstrap';
 import styles from './counter.css';
+console.log('styles: ', styles);
 
 // Example of class decorators
 // https://babeljs.io/docs/plugins/transform-decorators/
