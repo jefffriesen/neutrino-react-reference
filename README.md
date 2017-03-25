@@ -82,6 +82,7 @@ render(
   document.getElementById('root'),
 );
 ```
+This scaffolding is an example of [feature-first architecture](https://medium.com/front-end-hacking/the-secret-to-organization-in-functional-programming-913484e85fc9#.4zpdahe2f) that colocates all code for a feature together instead of putting all of the view components in a folder, the stores in another and tests in another folder.
 
 dependencies: `plop`, `inquirer-directory`
 
@@ -126,14 +127,9 @@ export default class Table extends React.Component {
 
 #### TODO:
 * Wait until neutrino v5 lands and then update these dependencies with neutrino-react-reference as the upstream.
-* Clean up function generators
 * Add current route to store (Link to mwestrate's blog post)
-* Add 404 route
-* Add active link
 
 
 #### Documentation
 * tcomb & Flowtypes use
 * mobx remotedev
-* How to use lint and prettier together
-* Feature-first architecture: https://medium.com/front-end-hacking/the-secret-to-organization-in-functional-programming-913484e85fc9#.4zpdahe2f
