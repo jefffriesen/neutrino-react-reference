@@ -111,6 +111,23 @@ https://github.com/webpack-contrib/css-loader
 }
 ```
 
+Importing and exporting variables:
+```css
+// palettes.css:
+@value ORANGE: #FFBD41;
+@value BROWN: #302D2B;
+```
+
+Inside another css file:
+```css
+@value palettes: "../shared/styles/palettes.css";
+@value BROWN, ORANGE from palettes;
+
+body {
+  background-color: ORANGE
+}
+```
+
 Global styles like Bootstrap or Foundation can just be imported without assignment. Assign local styles to a variable and use them in the `className` prop:
 ```js
 import React from 'react';
@@ -123,12 +140,19 @@ export default class Table extends React.Component {
 }
 ```
 
+Working with `:local` styles combined with global styles is also possible. For example, you can override a Bootstrap nav element like this:
+```css
+:local :global(.nav > li > a).listItem {
+  color: tomato;
+}
+```
+
+
 --------------------------------------------------------------------------------
 
 #### TODO:
 * Wait until neutrino v5 lands and then update these dependencies with neutrino-react-reference as the upstream.
 * Add current route to store (Link to mwestrate's blog post)
-
 
 #### Documentation
 * tcomb & Flowtypes use

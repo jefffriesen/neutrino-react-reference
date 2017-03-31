@@ -2,7 +2,7 @@ const util = require('../util')
 const file = require('../util/file')
 
 module.exports = {
-  description: 'Generate a feature',
+  description: 'Generate a feature with a store',
   prompts: [
     {
       type: 'input',
