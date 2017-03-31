@@ -113,7 +113,7 @@ https://github.com/webpack-contrib/css-loader
 
 Importing and exporting variables:
 ```css
-// palettes.css:
+/* palettes.css */
 @value ORANGE: #FFBD41;
 @value BROWN: #302D2B;
 ```
